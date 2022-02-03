@@ -63,7 +63,7 @@
     align-items: flex-start;
     padding: 10px 0;
     position: fixed;
-    width: 92.7vw;
+    width: 91.2vw;
     background-color: #F9F9F9;
     z-index: 6;
 }
@@ -112,7 +112,7 @@
 
 .header__center {
     display: flex;
-    width: 92.7vw;
+    width: 91.2vw;
     align-items: center;
     justify-content: space-between;
     position: fixed;
