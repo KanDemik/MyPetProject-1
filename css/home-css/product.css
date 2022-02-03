@@ -1,0 +1,121 @@
+.product__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 46px;
+}
+
+.product__title a {
+    background: #FFFFFF;   
+    border: 1px solid #F0F0F0;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 9px 16px 9px 40px;
+    position: relative;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: SF PRO;
+}
+
+.product__title a::before {
+    content: "";
+    background: url("../../img/home-img/product-img/Filter.svg") center no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 25%;
+    left: 12px;
+}
+
+.product__card {
+    max-width: 300px;
+    height: 480px;
+    padding: 0 0 20px 0;
+    position: relative;
+}
+
+.product__img img {
+    max-width: 300px;
+    height: 300px;
+}
+
+.product__desc {
+    box-sizing: border-box;
+    padding: 16px 20px 0 20px;
+}
+
+.product__act {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product__desc a {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: SF PRO;
+}
+
+.product__desc p {
+    margin: 12px 0 16px 0;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: SF PRO;
+    max-width: 250px;
+}
+
+.product__act a {
+    background: #FF7010;
+    border-radius: 6px;
+    width: 131px;
+    height: 48px;
+    padding: 13px 32px;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: SF PRO;
+    color: #fff;
+}
+
+.product__act span {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;  
+    display: flex;
+    align-items: center;
+    text-align: right;  
+    color: #FF7010;
+    font-family: SF PRO;
+}
+
+.product__sticker {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background: #E23535;
+    width: 65px;
+    height: 32px;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product__sticker span {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+}
+
+.product__catalog {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 32px;
+}

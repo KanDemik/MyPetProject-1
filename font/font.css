@@ -1,0 +1,17 @@
+@font-face {
+    font-family: Inter;
+    src: url(Inter-Regular.otf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(Inter-SemiBold.otf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: SF PRO;
+    src: url(SF-Pro-Display-Regular.otf);
+    font-weight: 400;
+}
