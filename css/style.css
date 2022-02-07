@@ -24,6 +24,11 @@ h1, h2, h3, h4, h5 {
     margin: 0;
 }
 
+span {
+    font-family: Inter;
+    margin: 0;
+}
+
 p {
     font-family: Inter;
     margin: 0;

@@ -32,6 +32,9 @@
     height: 480px;
     padding: 0 0 20px 0;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .product__img img {
@@ -49,6 +52,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex: 1 1 auto;
 }
 
 .product__desc a {
@@ -118,4 +122,5 @@
     align-items: center;
     flex-wrap: wrap;
     margin-top: 32px;
+    max-width: 1265px;
 }

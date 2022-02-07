@@ -1,0 +1,159 @@
+.shopping-cart {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 420px;
+    background: #fff;
+    z-index: 7;
+    padding: 32px 20px 12px 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transform: translateX(150%);
+    transition: 0.30s;
+}
+
+.shopping-cart__title {
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+    margin: 0 0 20px 0;
+}
+
+.shopping-cart__title h3 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    color: #191919;
+}
+
+.shopping-cart__order {
+    flex: 1 1 auto;
+}
+
+.shopping-cart__act {
+    flex: 0 1 48px;
+}
+
+.shopping-cart__product {
+    display: flex;
+    max-width: 380px;
+    max-height: 128px;
+    margin-bottom: 36px;
+}
+
+.shopping-cart__column {
+    margin-left: 16px;
+    max-width: 238px;
+}
+
+.shopping-cart__row h5 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #191919;
+    margin-bottom: 8px;
+}
+
+.shopping-cart__row p {
+    font-size: 14px;
+    line-height: 18px;
+    color: #191919;
+    margin-bottom: 12px;
+}
+
+.shopping-cart__img img {
+    width: 94px;
+    height: 94px;
+}
+
+.shopping-cart__payment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shopping-cart__number {
+    display: flex;
+    background: rgb(248, 220, 201);;
+    border-radius: 6px;
+    text-align: center;
+    height: 36px;
+    align-items: center;
+}
+
+.shopping-cart__number span {
+    width: 30.66px;
+    color: #FF7010;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.shopping-cart__number p {
+    width: 30.66px;
+    color: #FF7010;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.shopping-cart__cost span {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FF7010;
+}
+
+.shopping-cart__act {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shopping-cart__formalization {
+    width: 178px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FF7010;
+    border-radius: 6px;
+}
+
+.shopping-cart__formalization span {
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+    font-family: SF PRO;
+}
+
+.shopping-cart__total span {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #FF7010;
+}
+
+.shopping-cart.active {
+    transform: translateX(0);
+}
+
+.shopping-cart.active ~ .content {
+    filter: blur(10px);
+    overflow-y: hidden;
+}
+
+.shopping-cart.active ~ .content::before {
+    content: "";
+    background: rgb(61, 61, 61, 0.50);
+    z-index: 7;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: inset 0 0 100px rgb(61, 61, 61, 0.50);
+}

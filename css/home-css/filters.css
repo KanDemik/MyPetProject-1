@@ -1,0 +1,139 @@
+.filters {
+    position: fixed;
+    z-index: 8;
+    max-width: 520px;
+    height: 100%;
+    background: #fff;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 32px 20px 0 20px;
+    overflow: auto;
+    transition: 0.25s;
+    transform: translateX(150%);
+}
+
+.filters.active {
+    transform: translateX(0);
+}
+
+.filters.active ~.content {
+    filter: blur(10px);
+    overflow-y: hidden;
+}
+
+.filters.active ~.content::before {
+    content: "";
+    background: rgb(61, 61, 61, 0.50);
+    z-index: 7;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: inset 0 0 100px rgb(61, 61, 61, 0.50);
+}
+
+.filters.active ~.content .header__top {
+    display: none;
+}
+
+.filters.active ~.content .header__center {
+    display: none;
+}
+
+.filters__title {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    margin-bottom: 40px;
+}
+
+.filters__title h2 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    color: #191919;
+}
+
+.filters__choice:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.filters__choice {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.filter__select-btn {
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    border-radius: 6px;
+    box-sizing: border-box;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 8px 8px 0; 
+}
+
+.filter__select-btn.selected {
+    background: #FF7010;
+}
+
+.filter__select-btn.selected a {
+    color: #fff;
+}
+
+.filter__select-btn a {
+    color: #191919;
+    padding: 11px 20px;
+}
+
+.filters__choice span {
+    position: absolute;
+    top: -26px;
+    left: 0;
+    font-size: 16px;
+    line-height: 22px;
+    color: #A5A5A5;
+    font-family: SF PRO;
+}
+
+.filters__act {
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 73px;
+}
+
+.filters__erase-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #FF7010;
+    box-sizing: border-box;
+    border-radius: 6px;
+    width: 230px;
+    height: 48px;
+    right: 20px;
+    bottom: 12px;
+    color: #FF7010;
+}
+
+.filters__apply-btn {
+    display: flex;
+    background: #FF7010;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 6px;
+    width: 230px;
+    height: 48px;
+    right: 20px;
+    bottom: 12px;
+    color: #FFFFFF;
+}
