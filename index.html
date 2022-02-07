@@ -12,11 +12,249 @@
     <link rel="stylesheet" href="css/home-css/product.css">
     <link rel="stylesheet" href="css/home-css/delivery.css">
     <link rel="stylesheet" href="css/home-css/footer.css">
+    <link rel="stylesheet" href="css/home-css/filters.css">
+    <link rel="stylesheet" href="css/home-css/product-window.css">
+    <link rel="stylesheet" href="css/home-css/shopping-cart.css">
     <link rel="stylesheet" href="css/home-css/media.css">
     <title>Main Page</title>
 </head>
 <body>
     <div class="wrapper">
+        <div class="filters">
+            <div class="filters__body">
+                <div class="filters__title">
+                    <h2>Фильтры</h2>
+                    <div class="filters__cross">
+                        <img src="img/home-img/Cross-2.svg" alt="">
+                    </div>
+                </div>
+                <div class="filters__choice">
+                    <span>Общее</span>
+                    <div class="filter__select-btn" id="filterSelectBtn1"><a href="#">Хит</a></div>
+                    <div class="filter__select-btn" id="filterSelectBtn2"><a href="#">Новинка</a></div>
+                    <div class="filter__select-btn" id="filterSelectBtn3"><a href="#">С мясом</a></div>
+                    <div class="filter__select-btn" id="filterSelectBtn4"><a href="#">Вегетерианская</a></div>
+                    <div class="filter__select-btn" id="filterSelectBtn5"><a href="#">С курицей</a></div>
+                    <div class="filter__select-btn" id="filterSelectBtn6"><a href="#">Без лука</a></div>
+                    <div class="filter__select-btn" id="filterSelectBtn7"><a href="#">С грибами</a></div>
+                    <div class="filter__select-btn" id="filterSelectBtn8"><a href="#">С морепродуктами</a></div>
+                    <div class="filter__select-btn" id="filterSelectBtn9"><a href="#">Барбекью</a></div>
+                </div>
+                <div class="filters__choice">
+                    <span>Сыр</span>
+                    <div class="filter__select-btn" id="filterSelectBtn10"><a href="#" >Реджанито</a></div>
+                    <div class="filter__select-btn" id="filterSelectBtn11"><a href="#" >Моцарелла</a></div>
+                    <div class="filter__select-btn" id="filterSelectBtn12"><a href="#" >Чеддер</a></div>
+                    <div class="filter__select-btn" id="filterSelectBtn13"><a href="#" >С голубой плесенью</a></div>
+                    <div class="filter__select-btn" id="filterSelectBtn14"><a href="#" >Смесь итальянских сыров</a></div>
+                    <div class="filter__select-btn" id="filterSelectBtn15"><a href="#" >Мягкий молодой сыр</a></div>      
+                </div>
+                <div class="filters__choice">
+                    <span>Мясо</span>
+                    <div class="filter__select-btn" id="filterSelectBtn16"><a href="#" >Пепперони</a></div>
+                    <div class="filter__select-btn" id="filterSelectBtn17"><a href="#" >Свинина</a></div>
+                    <div class="filter__select-btn" id="filterSelectBtn18"><a href="#" >Ветчина</a></div>
+                    <div class="filter__select-btn" id="filterSelectBtn19"><a href="#" >Бекон</a></div>
+                    <div class="filter__select-btn" id="filterSelectBtn20"><a href="#" >Говядина</a></div>
+                    <div class="filter__select-btn" id="filterSelectBtn21"><a href="#" >Чоризо</a></div>
+                    <div class="filter__select-btn" id="filterSelectBtn22"><a href="#" >Колбаски</a></div>
+                    <div class="filter__select-btn" id="filterSelectBtn23"><a href="#" >Куриная грудка</a></div>  
+                </div>
+                <div class="filters__choice">
+                    <span>Компонент</span>
+                    <div class="filter__select-btn" id="filterSelectBtn24"><a href="#" >Креветка</a></div>
+                    <div class="filter__select-btn" id="filterSelectBtn25"><a href="#" >Ананасы</a></div>
+                    <div class="filter__select-btn" id="filterSelectBtn26"><a href="#" >Шампиньоны</a></div>
+                    <div class="filter__select-btn" id="filterSelectBtn27"><a href="#" >Лук</a></div>
+                    <div class="filter__select-btn" id="filterSelectBtn28"><a href="#" >Перец халапеньо</a></div>
+                    <div class="filter__select-btn" id="filterSelectBtn29"><a href="#" >Орегано</a></div>
+                    <div class="filter__select-btn" id="filterSelectBtn30"><a href="#" >Зеленый перец</a></div>
+                    <div class="filter__select-btn" id="filterSelectBtn31"><a href="#" >Томаты</a></div>
+                    <div class="filter__select-btn" id="filterSelectBtn32"><a href="#" >Чеснок</a></div>
+                    <div class="filter__select-btn" id="filterSelectBtn33"><a href="#" >Красный</a></div>
+                    <div class="filter__select-btn" id="filterSelectBtn34"><a href="#" >Оливки</a></div>
+                    <div class="filter__select-btn" id="filterSelectBtn35"><a href="#" >Маслины</a></div>
+                    <div class="filter__select-btn" id="filterSelectBtn36"><a href="#" >Клубника</a></div>
+                    <div class="filter__select-btn" id="filterSelectBtn37"><a href="#" >Смесь итальянских трав</a></div>
+                </div>
+                <div class="filters__act">
+                    <a href="#" class="filters__erase-btn">Сбросить</a>
+                    <a href="#" class="filters__apply-btn">Применить</a>
+                </div>
+            </div>
+        </div>
+        <div class="product-window">
+            <div class="product-window__card active">
+                <div class="product-window__img">
+                    <div class="product-window__sticker">
+                        <span>NEW</span>
+                    </div>
+                    <img src="img/home-img/product-img/pizza/pizza-1.jpg" alt="">
+                </div>
+                <div class="product-window__menu">
+                    <div class="product-window__cross">
+                        <img src="img/home-img/producti-window-img/Cross-3.svg" alt="">
+                    </div>
+                    <div class="product-window__title">
+                        <h3>Пепперони по-деревенски</h3>
+                        <img src="img/home-img/Info.svg" alt="">
+                    </div>
+                    <div class="product-window__material">
+                        <div class="product-window__img">
+                            <img src="img/home-img/producti-window-img/img-1.svg" alt="">
+                            <p>Моцарелла</p>
+                        </div>
+                        <div class="product-window__img">
+                            <img src="img/home-img/producti-window-img/img-2.svg" alt="">
+                            <p>Огурцы маринованные</p>
+                        </div>
+                        <div class="product-window__img">
+                            <img src="img/home-img/producti-window-img/img-3.svg" alt="">
+                            <p>Пепперони</p>
+                        </div>
+                        <div class="product-window__img">
+                            <img src="img/home-img/producti-window-img/img-4.svg" alt="">
+                            <p>Томатный соус</p>
+                        </div>
+                    </div>
+                    <div class="product-window__size">
+                        <div class="product-window__select active">
+                            <span>Традиционное</span>
+                        </div>
+                        <div class="product-window__select">
+                            <span>Тонкое</span>
+                        </div>
+                        <div class="product-window__select">
+                            <span>20 см</span>
+                        </div>
+                        <div class="product-window__select">
+                            <span>28 см</span>
+                        </div>
+                        <div class="product-window__select">
+                            <span>33 см</span>
+                        </div>
+                    </div>
+                    <div class="product-window__additives">
+                        <div class="product-window__title">
+                            <h4>Добавьте в пиццу</h4>
+                        </div>
+                        <div class="product-window__img">
+                            <img src="img/home-img/producti-window-img/img-1.svg" alt="">
+                            <p>Моцарелла</p>
+                            <p>59 ₽</p>
+                        </div>
+                        <div class="product-window__img">
+                            <img src="img/home-img/producti-window-img/img-6.svg" alt="">
+                            <p>Шампиньоны</p>
+                            <p>59 ₽</p>
+                        </div>
+                        <div class="product-window__img">
+                            <img src="img/home-img/producti-window-img/img-7.svg" alt="">
+                            <p>Красный лук</p>
+                            <p>59 ₽</p>
+                        </div>
+                        <div class="product-window__img">
+                            <img src="img/home-img/producti-window-img/img-8.svg" alt="">
+                            <p>Сладкий перец</p>
+                            <p>59 ₽</p>
+                        </div>
+                    </div>
+                    <div class="product-window__act">
+                        <div class="product-window__total">
+                            <span>Итого: </span>
+                            <span class="product-window__price">379 ₽</span>
+                        </div>
+                        <div class="product-window__add">
+                            <a href="#">Добавить</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shopping-cart">
+            <div class="shopping-cart__title">
+                <h3>Ваш заказ</h3>
+                <div class="shopping-cart__cross">
+                    <img src="img/home-img/Cross-2.svg" alt="">
+                </div>
+            </div>
+            <div class="shopping-cart__order">
+                <div class="shopping-cart__product">
+                    <div class="shopping-cart__img">
+                        <img src="img/home-img/product-img/pizza/pizza-1.jpg" alt="">
+                    </div>
+                    <div class="shopping-cart__column">
+                        <div class="shopping-cart__row">
+                            <h5>Чикен Сладкий Чили</h5>
+                            <p>Традиционное тесто, 23 см</p>
+                        </div>
+                        <div class="shopping-cart__payment">
+                            <div class="shopping-cart__number">
+                                <span class="shopping-cart__minus">-</span>
+                                <p class="shopping-cart__sum">1</p>
+                                <span class="shopping-cart__plus">+</span>
+                            </div>
+                            <div class="shopping-cart__cost">
+                               <span>499 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shopping-cart__product">
+                    <div class="shopping-cart__img">
+                        <img src="img/home-img/product-img/pizza/pizza-1.jpg" alt="">
+                    </div>
+                    <div class="shopping-cart__column">
+                        <div class="shopping-cart__row">
+                            <h5>Чикен Сладкий Чили</h5>
+                            <p>Традиционное тесто, 23 см</p>
+                        </div>
+                        <div class="shopping-cart__payment">
+                            <div class="shopping-cart__number">
+                                <span class="shopping-cart__minus">-</span>
+                                <p class="shopping-cart__sum">1</p>
+                                <span class="shopping-cart__plus">+</span>
+                            </div>
+                            <div class="shopping-cart__cost">
+                               <span>499 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shopping-cart__product">
+                    <div class="shopping-cart__img">
+                        <img src="img/home-img/product-img/pizza/pizza-1.jpg" alt="">
+                    </div>
+                    <div class="shopping-cart__column">
+                        <div class="shopping-cart__row">
+                            <h5>Чикен Сладкий Чили</h5>
+                            <p>Традиционное тесто, 23 см</p>
+                        </div>
+                        <div class="shopping-cart__payment">
+                            <div class="shopping-cart__number">
+                                <span class="shopping-cart__minus">-</span>
+                                <p class="shopping-cart__sum">1</p>
+                                <span class="shopping-cart__plus">+</span>
+                            </div>
+                            <div class="shopping-cart__cost">
+                               <span>499 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shopping-cart__act">
+                <div class="shopping-cart__total">
+                    <span>Итого: </span>
+                    <span class="shopping-cart__price">
+                        2 379 ₽
+                    </span>
+                </div>
+               <div class="shopping-cart__formalization">
+                   <span>Оформить заказ</span>
+               </div>
+            </div>
+        </div>
         <div class="content">
             <header class="header">
                 <div class="header__container container">
@@ -171,7 +409,7 @@
                         <div class="product__pizza" id="productPizza">
                             <div class="product__title">
                                 <h2>Пицца</h2>
-                                <a href="#">Фильтры</a>
+                                <a href="#" class="filters-btn">Фильтры</a>
                             </div>
                             <div class="product__catalog">
                                 <div class="product__card">
@@ -289,7 +527,7 @@
                         <div class="product__sushi" id="productSushi">
                             <div class="product__title">
                                 <h2>Суши</h2>
-                                <a href="#">Фильтры</a>
+                                <a href="#" class="filters-btn">Фильтры</a>
                             </div>
                             <div class="product__catalog">
                                 <div class="product__card">
@@ -407,7 +645,7 @@
                         <div class="product__snacks" id="productSnacks">
                             <div class="product__title">
                                 <h2>Закуски</h2>
-                                <a href="#">Фильтры</a>
+                                <a href="#" class="filters-btn">Фильтры</a>
                             </div>
                             <div class="product__catalog">
                                 <div class="product__card">
@@ -525,7 +763,7 @@
                         <div class="product__desserts" id="productDesserts">
                             <div class="product__title">
                                 <h2>Десерты</h2>
-                                <a href="#">Фильтры</a>
+                                <a href="#" class="filters-btn">Фильтры</a>
                             </div>
                             <div class="product__catalog">
                                 <div class="product__card">
@@ -643,7 +881,7 @@
                         <div class="product__beverages" id="productBeverages">
                             <div class="product__title">
                                 <h2>Напитки</h2>
-                                <a href="#">Фильтры</a>
+                                <a href="#" class="filters-btn">Фильтры</a>
                             </div>
                             <div class="product__catalog">
                                 <div class="product__card">
@@ -761,7 +999,7 @@
                         <div class="product__sauce" id="productSauce">
                             <div class="product__title">
                                 <h2>Соусы</h2>
-                                <a href="#">Фильтры</a>
+                                <a href="#" class="filters-btn">Фильтры</a>
                             </div>
                             <div class="product__catalog">
                                 <div class="product__card">
@@ -879,7 +1117,7 @@
                         <div class="product__combo" id="productCombo">
                             <div class="product__title">
                                 <h2>Комбо</h2>
-                                <a href="#">Фильтры</a>
+                                <a href="#" class="filters-btn">Фильтры</a>
                             </div>
                             <div class="product__catalog">
                                 <div class="product__card">
@@ -1055,8 +1293,8 @@
                 </div>
             </footer>
         </div>
-        <script src="js/script.js"></script>
-        <script src="js/scroll-script.js"></script>
     </div>
+    <script src="js/script.js"></script>
+    <script defer src="js/filterSelect.js"></script>
 </body>
 </html>
